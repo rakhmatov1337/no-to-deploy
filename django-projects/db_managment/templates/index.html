@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!-- <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +8,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/css/boxicons.min.css" integrity="sha512-cn16Qw8mzTBKpu08X0fwhTSv02kK/FojjNLz0bwp2xJ4H+yalwzXKFw/5cLzuBZCxGWIA+95X4skzvo8STNtSg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
 </head>
+=======
+{% extends 'base.html' %}
+{% load static %}
+>>>>>>> 0aadd4ddccf49a4f2c35fec52e86ac2e67c3b9bf
 
+{% block content %}
 <body>
     <script>
         if ( window.history.replaceState ) {
@@ -26,7 +32,7 @@
         <br>
         <br>
         <div class="container">
-            <h3>Courses</h3>
+            <h3 >Courses</h3>
             <h4>Add new course</h4>
             <form action="{% url 'main_app:add_course' %}" method="POST">
                 {% csrf_token %}
@@ -93,6 +99,7 @@
         </div>
     </main>
 
+<<<<<<< HEAD
     <style>
         *{
             margin: 0;
@@ -233,4 +240,6 @@
     </main>
 
   
+=======
+>>>>>>> 0aadd4ddccf49a4f2c35fec52e86ac2e67c3b9bf
 {% endblock %}
